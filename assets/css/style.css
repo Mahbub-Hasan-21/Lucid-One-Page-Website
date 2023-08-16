@@ -1,0 +1,852 @@
+/*
+Lucid Project :
+Font Family -    Open Sans
+Primary Color -  #008ed6
+Secondary Color- #7f7f7f
+#999999
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Css */
+*{
+margin: 0;
+padding: 0;
+}
+body{
+font-family: 'Open Sans', sans-serif;
+}
+.margin-align{
+margin-left: 12px;
+}
+.btn-global{
+margin-right: 10px;
+text-decoration: none;
+text-transform: uppercase;
+padding: 15px 20px;
+font-size: 16px;
+font-weight: 500;
+background: transparent;
+color: #ffffff;
+border: 2px solid #4d4e53;
+border-radius: 5px;
+transition: 0.4s all ease-in-out;
+}
+.section-intro{
+text-transform: uppercase;
+font-size: 15px;
+font-weight: 700;
+color: #008ed6;
+text-align: center;
+}
+.section-title{
+text-align: center;
+text-transform: capitalize;
+font-size: 32px;
+font-weight: 700;
+margin: 15px 0px;
+}
+.section-box{
+position: relative;
+}
+.section-border::before{
+content: "";
+position: absolute;
+left: 48%;
+width: 0%;
+height: 2px;
+background: #008ed6;
+transition: 0.4s all ease-in-out;
+}
+.section-border::after{
+content: "";
+position: absolute;
+right: 48%;
+width: 0%;
+height: 2px;
+background: #008ed6;
+transition: 0.4s all ease-in-out;
+}
+
+/* Header CSS Start */
+
+header{
+background: url('../img/banner-image.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 95vh;
+}
+.header-section .navbar-section{
+margin-top: 15px;
+}
+.header-section .nav-item .nav-link{
+position: relative;
+color: #ffffff;
+font-size: 16px;
+padding: 0;
+margin: 0 15px;
+transition: 0.4s all ease-in-out;
+}
+.header-section .nav-item .nav-link::before{
+content: "";
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0%;
+height: 2px;
+background: #008ed6;
+transition: 0.4s all ease-in-out;
+}
+.header-section .nav-item .nav-link::after{
+content: "";
+position: absolute;
+bottom:-5px;
+right: 0;
+width: 0%;
+height: 2px;
+background: #008ed6;
+transition: 0.4s all ease-in-out;
+}
+.header-section .nav-item .nav-link:hover::before,
+.header-section .nav-item .nav-link:hover::after{
+width: 46%;
+}
+.header-section .header-intro{
+position: relative;
+min-height: 85vh;
+}
+.header-section .header-intro h5{
+color: #008ed6;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+margin-bottom: 25px;
+}
+.header-section .header-intro h1{
+color: #ffffff;
+font-size: 50px;
+font-weight: 600;
+line-height: 55px;
+}
+.header-section .header-intro p{
+color: #7f7f7f;
+font-size: 18px;
+font-weight: 600;
+line-height: 30px;
+margin: 30px 0;
+}
+.header-intro .header-button{
+margin-top: 100px;
+}
+.header-intro .header-button ul{
+padding: 0;
+}
+.header-intro .header-button ul li{
+list-style: none;
+display: inline-block;
+}
+.header-button .btn-global:hover{
+background: #008ed6;
+border: 2px solid #008ed6;
+}
+.header-intro .banner-phone{
+position: absolute;
+bottom: 0;
+right: 80px;
+}
+
+/* Header CSS End */
+
+/* Feature CSS Start */
+
+.feature-section{
+padding: 60px 0;
+border-bottom: 1px solid #ededed;
+transition: 0.4s all ease-in-out;
+}
+.feature-section:hover .section-border::before,
+.feature-section:hover .section-border::after{
+width: 2%;
+}
+.feature-section .feature-item{
+margin-top: 100px;
+}
+.feature-section .feature-item-box{
+cursor: pointer;
+transition: 0.4s all ease-in-out;
+padding: 20px 0; 
+}
+.feature-section .feature-item-box .fa-solid{
+font-size: 30px;
+height: 100px;
+width: 100px;
+border: 2px solid #e2e2e2;
+border-radius: 50%;
+color: #008ed6;
+line-height: 100px;
+text-align: center;
+margin: 0 auto;
+display: block;
+}
+.feature-section .feature-item-box h3{
+text-align: center;
+margin: 15px 0px;
+text-transform: capitalize;
+font-size: 25px;
+}
+.feature-section .feature-item-box p{
+color: #999999;
+font-size: 16px;
+font-weight: 500;
+line-height: 23px;
+padding: 0px 30px;
+text-align: center;
+}
+.feature-section .feature-item-box:hover{
+background-color: #fff;
+border: none;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgb(0 142 214 / 20%), 0 8px 16px rgb(0 142 214 / 20%);
+box-sizing: border-box;
+}
+
+/* Feature CSS End */
+
+/* About Long CSS Start*/
+
+.about-long-section{
+padding: 60px 0;
+transition: 0.4s all ease-in-out;
+}
+.about-long-section:hover .section-border::before,
+.about-long-section:hover .section-border::after{
+width: 3%;
+}
+.about-long-intro .section-intro{
+text-align: left;
+}
+.about-long-intro .section-title{
+text-align: left;
+}
+.about-long-intro .section-border::before{
+left: 0%;
+}
+.about-long-intro .section-border::after{
+right: 95%;
+}
+.about-long-section .about-long-img img{
+cursor: pointer;
+transition: transform .4s;
+}
+.about-long-section .about-long-img img:hover{
+transform: scale(1.1);
+}
+.about-long-intro p{
+margin: 30px 0;
+color: #999999;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+padding-right: 150px;
+}
+.about-long-intro .long-intro-property ul{
+padding: 0;
+}
+.about-long-intro .long-intro-property ul li{
+list-style: none;
+margin-bottom: 10px;
+}
+.about-long-intro .long-intro-property .fa-solid{
+color: #008ed6;
+font-size: 17px;
+width: 20px;
+}
+.about-long-intro .long-intro-property ul li h3{
+display: inline;
+text-transform: capitalize;
+font-size: 17px;
+margin-left: 5px;
+color: #1b1b1b;
+}
+
+/* About Long CSS End*/
+
+/* About Short CSS Start */
+
+.about-short-section{
+padding: 60px 0;
+transition: 0.4s all ease-in-out;
+background: #f2f2f2;
+}
+.about-short-section:hover .section-border::before,
+.about-short-section:hover .section-border::after{
+width: 3%;
+}
+.about-short-section .about-long-intro p{
+padding-right: 0px;
+}
+.about-short-section .about-short-img img{
+cursor: pointer;
+transition: transform .4s;
+}
+.about-short-section .about-short-img img:hover{
+transform: scale(1.1);
+}
+
+/* About Short CSS End */
+
+/* Testimonials CSS Start */
+
+.testimonials-section{
+background: url('../img/testimonials-image.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-height: 640px;
+position: relative;
+}
+.testimonials-section .testimonials-effect{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+backdrop-filter: blur(5px);
+}
+.testimonials-section{
+padding: 60px 0;
+transition: 0.4s all ease-in-out;
+}
+.testimonials-section:hover .section-border::before,
+.testimonials-section:hover .section-border::after{
+width: 2%;
+}
+.testimonials-section .section-box h2{
+color: #ffffff;
+}
+.testimonials-section .owl-carousel .item .content{
+
+}
+.testimonials-section .owl-carousel .item p{
+color: #ffffff;
+font-size: 20px;
+font-style: italic;
+padding-right: 50px;
+}
+.testimonials-section .owl-carousel .content-2{
+margin-top: 30px;
+}
+.testimonials-section .owl-carousel .content-2 img{
+width: 70px;
+}
+.testimonials-section .owl-carousel .content-2 h6{
+color: #ffffff;
+text-transform: capitalize;
+font-size: 14px;
+}
+.testimonials-section .owl-carousel .content-2 h5{
+color: #ffffff;
+text-transform: uppercase;
+font-size: 18px;
+}
+.testimonials-section .owl-carousel .content-2 .item-content{
+position: absolute;
+padding: 0px;
+top: 10px;
+left: 100px;
+}
+.testimonials-section .owl-carousel .content-2 .item-image{
+position: relative;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+margin: 60px 0px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+position: absolute;
+bottom: -110%;
+left: 44%;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+background: #ffffff;
+}
+.owl-theme .owl-dots .owl-dot span{
+background: transparent;
+border: 2px solid #ffffff;
+}
+
+/* Testimonials CSS End */
+
+/* Eye Catcher CSS Start */
+
+.eye-catcher-section{
+padding: 60px 0;
+background: #15141a;
+}
+.eye-catcher-section h2{
+color: #ffffff;
+font-weight: 100;
+}
+.eye-catcher-section h2 span{
+font-weight: 500;
+color: #008ed6;
+}
+.eye-catcher-section .eye-catcher-button{
+text-align: end;
+}
+.eye-catcher-section .eye-catcher-button ul{
+padding: 0;
+}
+.eye-catcher-section .eye-catcher-button ul li{
+list-style: none;
+display: inline-block;
+}
+.eye-catcher-section .eye-catcher-button .btn-global:hover{
+background: #008ed6;
+border: 2px solid #008ed6;
+}
+
+/* Eye Catcher CSS End */
+
+/* Pricing CSS Start */
+
+.pricing-section{
+padding: 60px 0;
+transition: 0.4s all ease-in-out;
+}
+.pricing-section:hover .section-border::before,
+.pricing-section:hover .section-border::after{
+width: 2%;
+}
+.pricing-item{
+margin-top: 55px;
+}
+.pricing-item .pricing-box{
+border: 2px solid #e0e0e0;
+cursor: pointer;
+transition: 0.3s all ease-in-out;
+}
+.pricing-item .pricing-box h3{
+text-align: center;
+text-transform: uppercase;
+font-size: 25px;
+font-weight: 700;
+margin: 15px 0px;
+letter-spacing: 2px;
+}
+.pricing-item .pricing-box .pricing-box-price{
+border-bottom: 2px solid #e0e0e0;
+border-top: 2px solid #e0e0e0;
+transition: 0.4s all ease-in-out;
+}
+.pricing-item .pricing-box .pricing-box-price h3{
+font-size: 85px;
+font-weight: 600;
+margin-bottom: 0;
+}
+.pricing-item .pricing-box .pricing-box-price h3 sup{
+font-weight: 500;
+font-size: 50px;
+}
+.pricing-item .pricing-box .pricing-box-price p{
+padding: 0;
+text-align: center;
+color: #999999;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: .5px;
+}
+.pricing-item .pricing-box .pricing-box-p p{
+color: #999999;
+font-size: 16px;
+font-weight: 500;
+padding: 50px 24px;
+text-align: center;
+margin-bottom: 0;
+}
+.pricing-item .pricing-box p span{
+color: #008ed6;
+}
+.pricing-item .pricing-box input{
+text-transform: uppercase;
+padding: 12px 35px;
+font-size: 16px;
+font-weight: 600;
+background: transparent;
+color: #008ed6;
+border: 2px solid #e0e0e0;
+border-radius: 5px;
+transition: 0.4s all ease-in-out;
+margin: 0 auto;
+display: block;
+margin-bottom: 20px;
+}
+.pricing-box:hover{
+box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+box-sizing: border-box;
+}
+.pricing-box:hover h3{
+color: #008ed6;
+}
+.pricing-box:hover input{
+background: #008ed6;
+color: #ffffff;
+border: 2px solid #008ed6;
+}
+.pricing-box:hover .pricing-box-price{
+background: #008ed6;
+color: #ffffff;
+}
+.pricing-box:hover .pricing-box-price p,
+.pricing-box:hover .pricing-box-price h3{
+color: #ffffff;
+}
+
+/* Pricing CSS End */
+
+/* Contact CSS Start */
+
+.contact-section{
+padding-top: 60px;
+background: #ededed;
+transition: 0.4s all ease-in-out;
+position: relative;
+padding-bottom: 300px;
+}
+.contact-section:hover .section-border::before,
+.contact-section:hover .section-border::after{
+width: 2%;
+}
+.contact-section .contact-address{
+padding: 30px 0;
+}
+.contact-section .contact-address .fa-solid{
+font-size: 30px;
+color: #008ed6;
+width: 100% !important;
+text-align: center;
+margin-bottom: 25px;
+}
+.contact-section .contact-address p{
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+color: #999999;
+}
+.contact-section .contact-form{
+position: absolute;
+background: #15141a;
+padding: 80px;
+bottom: -100px;
+left: 50%;
+transform: translateX(-50%);
+width: 60%;
+}
+.contact-section .contact-form .form-control{
+background: transparent;
+border: 3px solid #444348;
+padding: 10px;
+font-size: 16px;
+font-weight: 600;
+color: #ffffff !important;
+border-radius: 4px;
+}
+.contact-section .contact-form input::placeholder,
+.contact-section .contact-form textarea::placeholder{
+color: #444348;
+}
+.form-control:focus{
+box-shadow: none;
+}
+.contact-section .contact-form .btn{
+cursor: pointer;
+background: #008ed6;
+border: 0px;
+border-radius: 5px;
+padding: 15px 20px;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: .5px;
+transition: transform .4s;
+}
+.contact-section .contact-form .btn:hover{
+transform: scale(1.1);
+}
+.contact-button{
+display: block;
+text-align: end;
+margin-bottom: 0px !important;
+}
+
+/* Contact CSS End */
+
+/* Footer CSS Start */
+
+.footer-section{
+padding: 40px 0;
+background: #15141a;
+}
+.footer-section ul{
+padding: 0;
+text-align: center;
+}
+.footer-section ul li{
+display: inline-block;
+list-style: none;
+}
+.footer-section ul li .fa-brands{
+font-size: 25px;
+margin: 0 10px;
+color: #444348;
+transition: 0.4s all ease-in-out;
+}
+.footer-section ul li .fa-brands:hover{
+color: #008ed6;
+}
+.footer-section p{
+text-align: center;
+text-transform: uppercase;
+font-size: 18px;
+color: #444348;
+font-weight: 600;
+}
+.footer-section p span{
+color: #008ed6;
+}
+
+/* Footer CSS End */
+
+/* Media Query CSS */
+
+@media (min-width: 992px) and (max-width: 1200px){
+header {height: 120vh;}
+.img-fluid {max-width: 90%;}
+.header-intro .banner-phone {top: 50%;right: 0;}
+.header-section .nav-item .nav-link {font-size: 18px;margin: 0 10px;}
+.navbar-expand-lg {padding-bottom: 30px;}
+.header-section .header-intro h5 {font-size: 16px;margin-bottom: 10px;}
+.header-section .header-intro h1 {font-size: 50px;line-height: 60px;}
+/* .header-intro .banner-phone {bottom: -126px;right: -50px;} */
+.header-section .header-intro p {font-size: 18px;line-height: 30px;}
+.btn-global {margin-right: 12px;padding: 18px 18px;font-size: 18px;}
+.margin-align {margin-left: 0px;}
+.header-intro .header-button {margin-top: 65px;}
+.section-intro {font-size: 20px;}
+.section-title {font-size: 40px;}
+.feature-section:hover .section-border::before, .feature-section:hover .section-border::after {width: 10%;}
+.section-border::before,.section-border::after {height: 5px;}
+.feature-section .feature-item-box .fa-solid {height: 80px;width: 80px;line-height: 80px;}
+.feature-section .feature-item-box p {line-height: 24px;padding: 0px 18px;}
+.feature-section {border-bottom: 5px solid #ededed;}
+.about-long-section .about-long-img img {margin-left: 10%;width: 90%;}
+.about-long-section:hover .section-border::before, .about-long-section:hover .section-border::after {width: 15%;}
+.about-long-intro .section-border::after {right: 85%;}
+.about-long-intro .section-border::before {left: 12%;}
+.about-long-intro p {margin: 50px 0 30px 0;font-size: 22px;line-height: 33px;padding-right: 46px;}
+.about-long-intro .long-intro-property ul li {margin-bottom: 15px;}
+.about-long-intro .long-intro-property ul li h3 {font-size: 20px;margin-left: 0px;}
+.about-long-intro .long-intro-property .fa-solid {font-size: 20px;width: 30px;}
+.about-short-section .about-short-img img {width: 90%;height: auto;margin-left: 10%;margin-top: 20%;}
+.about-short-section:hover .section-border::before, .about-short-section:hover .section-border::after {width: 15%;}
+.about-short-intro .section-border::after {right: 85%;}
+.about-short-intro .section-border::before {left: 12%;}
+.about-short-section .about-long-intro p {line-height: 40px;text-align: justify;}
+.testimonials-section:hover .section-border::before, .testimonials-section:hover .section-border::after {width: 10%;}
+.owl-theme .owl-nav.disabled+.owl-dots {bottom: -80%;}
+.owl-theme .owl-dots .owl-dot span {padding: 4px;}
+.eye-catcher-section .eye-catcher-button .btn-global {margin: 0px 5px;font-size: 16px;}
+.eye-catcher-section h2 {font-size: 24px;}
+.pricing-section:hover .section-border::before, .pricing-section:hover .section-border::after {width: 10%;}
+.pricing-item .pricing-box h3 {font-size: 20px;}
+.pricing-item .pricing-box .pricing-box-price h3 sup {font-size: 42px;}
+.pricing-item .pricing-box .pricing-box-price h3 {font-size: 75px;}
+.pricing-item .pricing-box .pricing-box-price p {font-size: 16px;}
+.pricing-item .pricing-box .pricing-box-p p {padding: 25px 25px;}
+.pricing-item .pricing-box input {padding: 10px 30px;font-size: 14px;}
+.contact-section:hover .section-border::before, .contact-section:hover .section-border::after {width: 10%;}
+.contact-section .contact-address p {font-size: 16px;}
+.contact-section {padding-bottom: 250px;}
+.contact-section .contact-form {bottom: -35px;}
+.contact-section .contact-form {padding: 30px;}
+.contact-section .contact-form .btn {font-size: 14px;}
+.footer-section ul li .fa-brands {font-size: 24px;}
+.footer-section p {font-size: 17px;}
+}
+@media (min-width: 768px) and (max-width: 992px){
+header{height: 120vh;}
+.header-section .nav-item .nav-link{padding: 10px;margin: 0;font-size: 24px;}
+.navbar-toggler {color: #008ed6;background-color: #008ed6;border: 3px solid #008ed6;border-radius: 10px;}
+.header-section .header-intro h5{font-size: 22px;}
+.margin-align {margin-left: 0px;}
+.header-section .header-intro h1 {font-size: 60px;line-height: 75px;}
+.header-section .header-intro p {font-size: 24px;line-height: 35px;margin: 30px 38px 0px 0px;}
+.btn-global {padding: 20px 30px;font-size: 22px;border: 5px solid #4d4e53;}
+.image-fluid {max-width: 0;}
+.section-intro {font-size: 25px;}
+.section-title {font-size: 45px;margin: 18px 0px;}
+.section-border::before {height: 5px;}
+.section-border::after {height: 5px;}
+.feature-section:hover .section-border::before, .feature-section:hover .section-border::after {width: 10%;}
+.feature-section .feature-item-box {padding: 50px 80px;}
+.feature-section .feature-item-box h3 {margin: 18px 0px;font-size: 35px;}
+.feature-section .feature-item-box p {font-size: 25px;line-height: 35px;}
+.feature-section {border-bottom: 5px solid #ededed;}
+.about-long-section .about-long-img img {margin-left: 15%;}
+.about-long-section:hover .section-border::before, .about-long-section:hover .section-border::after {width: 15%;left: 0;}
+.about-long-intro p {margin: 50px 0px;font-size: 25px;line-height: 35px;padding-right: 100px;}
+.about-long-intro .long-intro-property ul li {margin-bottom: 22px;}
+.about-long-intro .long-intro-property .fa-solid {font-size: 25px;width: 35px;}
+.about-long-intro .long-intro-property ul li h3 {font-size: 30px;}
+.about-short-section:hover .section-border::before, .about-short-section:hover .section-border::after {width: 15%;left: 0;}
+.about-short-section .about-long-intro p {margin: 50px 0px;font-size: 25px;line-height: 35px;}
+.testimonials-section:hover .section-border::before, .testimonials-section:hover .section-border::after {width: 10%;}
+.testimonials-section .owl-carousel .content-2 img {width: 55px;}
+.testimonials-section .owl-carousel .content-2 .item-content {top: 5px;left: 70px;}
+.testimonials-section .owl-carousel .item p {font-size: 24px;}
+.owl-theme .owl-nav.disabled+.owl-dots {bottom: -30%;left: 40%;}
+.owl-theme .owl-dots .owl-dot span {padding: 7px;}
+.eye-catcher-section .eye-catcher-button ul {margin-top: 50px;text-align: center;}
+.eye-catcher-section h2 {text-align: center;font-size: 33px;}
+.pricing-section:hover .section-border::before, .pricing-section:hover .section-border::after {width: 10%;}
+.pricing-item .pricing-box {margin-bottom: 80px;width: 75%;margin-left: 95px;}
+.pricing-item .pricing-box h3 {font-size: 35px;margin: 25px 0px;letter-spacing: 3px;}
+.pricing-item .pricing-box .pricing-box-price h3 {font-size: 100px;}
+.pricing-item .pricing-box .pricing-box-price h3 sup {font-size: 58px;}
+.pricing-item .pricing-box .pricing-box-price p {font-size: 26px;letter-spacing: .8px;}
+.pricing-item .pricing-box .pricing-box-p p {font-size: 26px;}
+.pricing-item .pricing-box input {padding: 18px 45px;font-size: 26px;margin-bottom: 35px;}
+.contact-section:hover .section-border::before, .contact-section:hover .section-border::after {width: 10%;}
+.contact-section .contact-address{margin-top: 30px;}
+.contact-section .contact-address .fa-solid {font-size: 40px;}
+.contact-section .contact-address p {font-size: 18px;}
+.contact-section {padding-bottom: 500px;}
+.contact-section .contact-form {bottom: -80px;}
+.footer-section {padding: 50px 0;}
+.footer-section ul li .fa-brands {font-size: 36px;margin: 0 16px;}
+.footer-section p {font-size: 25px;}
+}
+@media (min-width: 576px) and (max-width: 768px){
+header{height: 120vh;}
+.header-section .nav-item .nav-link{padding: 10px;margin: 0;font-size: 24px;}
+.navbar-toggler {color: #008ed6;background-color: #008ed6;border: 3px solid #008ed6;border-radius: 10px;}
+.image-fluid {max-width: 0%;}
+.header-section .header-intro {position: relative;min-height: 0vh;}
+.margin-align {margin-left: 12px;margin-top: 90px;}
+.header-section .header-intro h5 {font-size: 20px;margin-bottom: 25px;}
+.header-section .header-intro h1 {font-size: 48px;line-height: 60px;}
+.header-section .header-intro p {font-size: 24px;line-height: 35px;}
+.btn-global {padding: 18px 24px;font-size: 22px;border: 3px solid #4d4e53;}
+.section-intro {font-size: 24px;}
+.section-title {font-size: 35px;}
+.section-border::before {height: 5px;}
+.section-border::after {height: 5px;}
+.feature-section:hover .section-border::before, .feature-section:hover .section-border::after {width: 12%;}
+.feature-section .feature-item-box h3 {font-size: 30px;}
+.feature-section .feature-item-box p {font-size: 22px;line-height: 30px;padding: 0px 50px;}
+.feature-section .feature-item-box {margin-bottom: 10px;}
+.feature-section {border-bottom: 5px solid #ededed;}
+.about-long-intro{margin-top: 20px;}
+.about-long-section:hover .section-border::before, .about-long-section:hover .section-border::after {width: 15%;}
+.about-long-intro .section-border::after {right: 85%;}
+.about-long-intro .section-border::before {left: 12%;}
+.about-long-intro p {font-size: 22px;line-height: 34px;padding-right: 100px;}
+.about-long-intro .long-intro-property ul li h3 {font-size: 24px;}
+.about-long-intro .long-intro-property .fa-solid {font-size: 22px;width: 24px;}
+.about-short-section:hover .section-border::before, .about-short-section:hover .section-border::after {width: 15%;}
+.about-short-intro .section-border::after {right: 85%;}
+.about-short-intro .section-border::before {left: 12%;}
+.about-short-section .about-short-img img {width: 100%;}
+.about-short-section .about-long-intro p {margin: 50px 0px;font-size: 23px;line-height: 38px;text-align: justify;}
+.testimonials-section:hover .section-border::before, .testimonials-section:hover .section-border::after {width: 12%;}
+.testimonials-section .owl-carousel .item p {font-size: 18px;}
+.testimonials-section .owl-carousel .content-2 img {width: 60px;}
+.testimonials-section .owl-carousel .content-2 .item-content {top: 0px;left: 70px;}
+.testimonials-section .owl-carousel .content-2 h5 {font-size: 12px;}
+.owl-theme .owl-nav.disabled+.owl-dots {bottom: -40%;left: 40%;}
+.owl-theme .owl-dots .owl-dot span {padding: 5px;}
+.eye-catcher-section .eye-catcher-button {text-align: center;margin-top: 30px;}
+.eye-catcher-section h2 {font-size: 33px;margin-bottom: 30px;}
+.pricing-section:hover .section-border::before, .pricing-section:hover .section-border::after {width: 12%;}
+.pricing-item .pricing-box {margin-bottom: 30px;}
+.pricing-item .pricing-box h3 {font-size: 36px;}
+.pricing-item .pricing-box .pricing-box-price p {font-size: 22px;}
+.pricing-item .pricing-box .pricing-box-p p {font-size: 26px;}
+.pricing-item .pricing-box input {padding: 16px 40px;font-size: 25px;}
+.contact-section:hover .section-border::before, .contact-section:hover .section-border::after {width: 12%;}
+.margin-contact{margin-bottom: 25px;}
+.contact-section .contact-address .fa-solid {font-size: 36px;}
+.contact-section .contact-address p {font-size: 22px;}
+.contact-section .contact-form {width: 80%;}
+.contact-section {padding-bottom: 500px;}
+.footer-section ul li .fa-brands {font-size: 32px;}
+.footer-section p {font-size: 24px;}
+}
+@media (min-width: 320px) and (max-width: 576px) {
+.about-short-section .about-short-img img {width: 90%;padding-left: 30px;}
+header {height: 100vh;}
+.navbar{margin-bottom: 10px;}
+.header-intro .header-button {margin-top: 60px;}
+.margin-align {margin-left: 0px;padding-left: 23px;}
+.image-fluid {max-width: 0;}
+.navbar-toggler {color: #008ed6;background-color: #008ed6;border: 3px solid #008ed6;border-radius: 10px;}
+.header-section .nav-item .nav-link {font-size: 20px;margin: 15px 15px;}
+.offcanvas-title {font-size: 20px;}
+.header-section .header-intro h5 {font-size: 14px;}
+.header-section .header-intro h1 {text-transform: capitalize;font-size: 32px;line-height: 40px;}
+.header-section .header-intro p {font-size: 16px;line-height: 24px;margin: 20px 0px;}
+.btn-global {margin-right: 15px;padding: 10px 10px;font-size: 13px;border: 4px solid #4d4e53;}
+.section-intro {font-size: 16px;}
+.section-title {font-size: 25px;margin: 10px 0px;}
+.section-border::before {height: 5px;}
+.section-border::after {height: 5px;}
+.feature-section:hover .section-border::before, .feature-section:hover .section-border::after {width: 12%;}
+.feature-section .feature-item {margin-top: 40px;}
+.feature-section .feature-item-box {margin-bottom: 25px;}
+.feature-section .feature-item-box h3 {margin: 12px 0px;font-size: 22px;}
+.feature-section .feature-item-box p {font-size: 16px;line-height: 25px;padding: 0px 60px;}
+.feature-section {border-bottom: 5px solid #ededed;}
+.feature-section .feature-item-box .fa-solid {font-size: 25px;height: 80px;width: 80px;line-height: 80px;}
+.about-long-section .about-long-img img {width: 80%;padding-left: 80px;margin: 10px 0px;}
+.about-long-section:hover .section-border::before, .about-long-section:hover .section-border::after {width: 15%;}
+.about-long-intro .section-border::after {right: 85%;}
+.about-long-intro .section-border::before {left: 12%;}
+.about-long-intro p {font-size: 14px;line-height: 23px;padding-right: 38px;margin: 20px 0px;}
+.about-long-intro .long-intro-property ul li h3 {font-size: 14px;}
+.about-long-intro .long-intro-property .fa-solid {font-size: 15px;margin-left: 10px;margin-top: 5px;width: 15px;}
+.about-short-section:hover .section-border::before, .about-short-section:hover .section-border::after {width: 15%;}
+.about-short-intro .section-border::after {right: 85%;}
+.about-short-intro .section-border::before {left: 12%;}
+.about-short-section .about-long-intro p {padding-right: 20px;font-size: 14px;line-height: 28px;margin: 40px 0px;}
+.testimonials-section:hover .section-border::before, .testimonials-section:hover .section-border::after {width: 12%;}
+.testimonials-section .owl-carousel .item p {padding: 0px 36px;line-height: 26px;font-size: 15px;}
+.testimonials-section .owl-carousel .content-2 img {width: 55px;}
+.testimonials-section .owl-carousel .content-2 h6 {font-size: 12px;}
+.testimonials-section .owl-carousel .content-2 h5 {font-size: 12px;}
+.testimonials-section .owl-carousel .content-2 .item-content {top: 8px;left: 72px;}
+.testimonials-section .owl-carousel .content-2 .item-image {margin-left: 34px;}
+.owl-theme .owl-dots .owl-dot span {padding: 4px;}
+.owl-theme .owl-nav.disabled+.owl-dots {left: 22%;}
+.eye-catcher-section .eye-catcher-button {text-align: center;margin-top: 35px;}
+.eye-catcher-section h2 {font-size: 16px;text-align: center;}
+.eye-catcher-section {padding: 50px 0;}
+.pricing-item .pricing-box h3 {font-size: 20px;margin: 10px 0px;letter-spacing: 1px;}
+.pricing-item .pricing-box .pricing-box-price h3 {font-size: 70px;}
+.pricing-item .pricing-box .pricing-box-price h3 sup {font-size: 40px;}
+.pricing-section:hover .section-border::before, .pricing-section:hover .section-border::after {width: 12%;}
+.pricing-item .pricing-box {margin-bottom: 30px;}
+.pricing-item .pricing-box .pricing-box-p p {font-size: 16px;padding: 40px 40px;line-height: 28px;}
+.pricing-item .pricing-box .pricing-box-price p {font-size: 16px;}
+.pricing-item .pricing-box input {padding: 12px 30px;font-size: 16px;}
+.contact-section:hover .section-border::before, .contact-section:hover .section-border::after {width: 12%;}
+.margin-contact{margin-bottom: 25px;}
+.contact-section .contact-address .fa-solid {font-size: 30px;margin-bottom: 16px;}
+.contact-section .contact-address p {font-size: 15px;}
+.contact-section .contact-form {bottom: -60px;width: 92%;padding: 50px;}
+.contact-section {padding-bottom: 450px;}
+.contact-section .contact-form .btn {padding: 12px 12px;font-size: 12px;}
+.footer-section ul li .fa-brands {font-size: 18px;}
+.footer-section p {font-size: 14px;}
+.about-long-intro{padding-left: 15px;}
+.about-short-intro{padding-left: 15px;}
+}
